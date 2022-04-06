@@ -1,0 +1,8 @@
+# 忽略所有 .html 的文件
+*.html
+
+# 跟踪2.html 即使前面忽略了.html
+!2.html
+
+#忽略test目录下所有的文件
+test/
