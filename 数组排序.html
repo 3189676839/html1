@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var arr = [1, 7, 9, 2];
+        arr.reverse();
+        console.log(arr); // (4) [2, 9, 7, 1]
+
+        var arr1 = [13, 44, 55, 77, 99, 22, 31, 5];
+        arr1.sort(function(a, b) {
+            // return a - b; // 升序的顺序排序 (8) [5, 13, 22, 31, 44, 55, 77, 99]
+            return b - a; //降序的顺序排序 (8) [99, 77, 55, 44, 31, 22, 13, 5]
+        });
+        console.log(arr1);
+    </script>
+</body>
+
+</html>

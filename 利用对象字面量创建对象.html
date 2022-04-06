@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // var obj = {}; //创建了一个空对象
+        // var data = {
+        //     uname: '张三丰',
+        //     age: 180,
+        //     sex: '男',
+        //     sayHi: function() {
+        //         console.log('h1~~');
+        //     }
+        // }
+        // console.log(data.uname);
+        // console.log(data['age']);
+        // data.sayHi();
+        // var num = 10;
+        // var obj = {
+        //     age: 18,
+        //     fn: function() {
+
+        //     }
+        // }
+
+        // function fn() {
+
+        // }
+        // console.log(obj.age);
+        // //console.log(age);
+        // var obj = new Object();
+        // obj.uname = '张三丰';
+        // obj.age = 18;
+        // obj.sex = '男';
+        // obj.sayHi = function() {
+        //     console.log('hi~~');
+        // }
+        // //利用 = 等号 赋值添加对象的属性和方法
+        // //每个属性之间用 分号结束
+        // console.log(obj.uname);
+        // console.log(obj['sex']);
+        // obj.sayHi();
+
+        // function Star(uname, type, hp) {
+        //     this.name = uname;
+        //     this.type = type;
+        //     this.HP = hp;
+        //     this.skill = function(skills) {
+        //         console.log(skills);
+        //     }
+        // }
+        // var ldh = new Star('廉颇', '肉坦', '8000');
+        // console.log(ldh); //object    对象
+        // console.log(ldh.name); //刘德华
+        // console.log(ldh['type']); //男
+        // ldh.skill('近战'); //调用方法
+        // var zxy = new Star('后裔', 'ad', '2000');
+        // console.log(zxy.name);
+        // console.log(zxy.type);
+        // function Star(uname, age, sex) {
+        //     this.name = uname;
+        //     this.age = age;
+        //     this.sex = sex;
+        //     this.sing = function(sang) {
+        //         console.log(sang);
+        //     }
+        // }
+        // var ldh = new Star('刘德华', 18, '男');
+        // console.log(ldh);
+
+        var obj = {
+            name: '哇哈哈',
+            age: 18,
+            sex: '男',
+            fn: function() {}
+        }
+        for (var k in obj) {
+            console.log(k); //k 变量 输出  得到 属性名
+            console.log(obj[k]); // obj[k]   得到 属性值
+        }
+    </script>
+</body>
+
+</html>

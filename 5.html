@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // var num = 10;
+
+        // function fn() { //外部函数
+        //     var num = 20;
+
+        //     function fun() {    // 内部函数
+        //         console.log(num);
+        //     }
+        //     fun();
+        // }
+        // fn();//20
+
+        // console.log(num);
+        // var num = 10; //undefined
+        // //相当于执行：
+        // var num;
+        // console.log(num);
+
+        // fun();
+        // var fun = function() {
+        //         console.log(22);
+        //     }
+        //     //相当于执行：
+        // var fun;
+        // fun();
+        // fun = function() {
+        //     console.log(22);
+        // }
+
+        // var num;
+        // function fn(){
+        //     var num;
+        //     console.log(num);
+        //     num=20;
+        //     console.log(num);
+        // }
+        // num=10;
+        // fn();
+
+        // var a;
+
+        // function f1() {
+        //     var b;
+        //     var a;
+        //     b = 9;
+
+        //     console.log(a);
+        //     console.log(b);
+        //     a = '123';
+        // }
+        // a = 18;
+        // f1();
+        f1();
+        console.log(c);
+        console.log(b);
+        console.log(a);
+
+        function f1() {
+            var a = b = c = 9;
+            console.log(a);
+            console.log(b);
+            console.log(c);
+        }
+        //相当于执行
+        // function f1() {
+        //     var a;
+        //     a = b = c = 9;  
+        //     //相当于 var a=9;b=9;c=9; b和c直接赋值 没有var声明当全局变量看
+        //     //集体声明 var a=9,b=9,c=9;
+        //     console.log(a);
+        //     console.log(b);
+        //     console.log(c);
+
+        // }
+        // f1();
+        // console.log(c);
+        // console.log(b);
+        // console.log(a);
+    </script>
+</body>
+
+</html>

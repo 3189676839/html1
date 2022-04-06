@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        console.log(Math.random()); //0.7255606304890698
+        //Math.floor(Math.random() * (max - min + 1)) + min;
+        function getRandom(min, max) {
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+        var num = (getRandom(1, 50));
+        for (var i = 1; i <= 10; i++) {
+            var guess = prompt('请你输入1~50之间的一个数，10次机会：');
+            if (guess > num) {
+                alert('大了');
+            } else if (guess < num) {
+                alert('小了');
+            } else {
+                alert('猜对了')
+                break;
+            }
+        }
+        // var arr = ['张三', '里斯', '李四', '王麻子'];
+        // console.log(arr[getRandom(0, arr.length - 1)]);
+    </script>
+</body>
+
+</html>
